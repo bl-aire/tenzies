@@ -12,6 +12,7 @@ main {
   background-color: #F5F5F5;
   height: 80vh;
   max-width: 50em;
+  width: 90vw;
   border-radius: 5px;
   margin-top: 2em;
 }
