@@ -4,14 +4,19 @@ import Die from './components/Die'
 
 function App() {
   return (
-    <main>
+    <div className='main die_container'>
       <Content />
-  
-      <Die 
-        value={6}
-      />
       
-    </main>
+        <Die value="4" />
+        <Die value="2" />
+        <Die value="4" />
+        <Die value="2" />
+        <Die value="4" />
+        <Die value="2" />
+        <Die value="4" />
+        <Die value="2" />
+      
+    </div>
   )
 }
 

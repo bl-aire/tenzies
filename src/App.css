@@ -10,12 +10,13 @@ body {
   margin-top: 2em;
 }
 
-main {
+.main {
   background-color: #F5F5F5;
-  height: 50vh;
+  height: 70vh;
   max-width: 50em;
   width: 90vw;
   border-radius: 5px;
+  padding: 0 0 4em 0;
 }
 
 .instructions{
