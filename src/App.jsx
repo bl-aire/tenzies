@@ -6,9 +6,11 @@ function App() {
   return (
     <main>
       <Content />
+  
       <Die 
-        value={0}
+        value={6}
       />
+      
     </main>
   )
 }
