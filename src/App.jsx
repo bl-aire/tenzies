@@ -33,7 +33,7 @@ function App() {
         {diceElements}
       </div>
       
-      <button className="roleDice" onClick={rollDice}> Roll </button>
+      <button className="rollDice" onClick={rollDice}> Roll Dice</button>
 
     </div>
   )

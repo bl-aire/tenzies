@@ -12,7 +12,7 @@ body {
 
 .main {
   background-color: #F5F5F5;
-  height: 70vh;
+  height: 80vh;
   max-width: 50em;
   width: 90vw;
   border-radius: 5px;
@@ -53,7 +53,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 1em;
-  margin: 2em 0 0 0;
+  margin: 1em 0 0 0;
 }
 
 .die{
@@ -63,4 +63,15 @@ body {
   padding: 1em;
   width: fit-content;
   height: 3em;
+}
+
+.rollDice{
+  background-color: #5035FF;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  border-radius: 3.81277px;
+  border:none;
+  padding: 1em 4em;
+  font-size: 1.1em;
+  color:#FFFFFF;
+  margin: 1em 0 0 0;
 }
