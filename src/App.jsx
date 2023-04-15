@@ -4,14 +4,15 @@ import Die from './components/Die'
 
 function App() {
 
+  const [dice, setDice] = React.useState(allNewDice())
+
   function allNewDice(){
     const a = Array.from(
       {
         length:6
       }, () => (Math.random() * 6)
     );
-
-    console.log(a);
+    return a;
   }
 
   return (
