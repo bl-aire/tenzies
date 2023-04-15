@@ -1,7 +1,7 @@
 export default function Die(props){
     return(
         <div className="die_container">
-            <div className="die">{props.value}</div>
+            <h3 className="die">{props.value}</h3>
         </div>
     )
 }
