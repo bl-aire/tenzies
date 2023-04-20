@@ -15,11 +15,10 @@ function App() {
     for (let i = 0; i < 6; i++) {
       newDice.push({
         value: Math.ceil(Math.random() * 6), 
-        isHeld: true,
+        isHeld: false,
         id: nanoid()
       })
     }
-    console.log(newDice)
     return newDice
   }
 
@@ -27,15 +26,25 @@ function App() {
     setDice(
       allNewDice()
     )
+    console.log("hello")
   }
 
-  const diceElements = dice.map(die => (
-    <Die 
+  function holdDice(id) {
+    setDice(oldDice => oldDice.map(die => {
+        return die.id === id ? 
+            {...die, isHeld: !die.isHeld} :
+            die
+    }))
+}
+
+const diceElements = dice.map(die => (
+  <Die 
+      key={die.id} 
       value={die.value} 
-      key={die.id}
-      isHeld={die.isHeld}
-    />
-  ))
+      isHeld={die.isHeld} 
+      holdDice={() => holdDice(die.id)}
+  />
+))
 
   return (
     <div className='main'>
