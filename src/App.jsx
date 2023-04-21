@@ -71,7 +71,7 @@ function App() {
         {diceElements}
       </div>
       
-      <button className="rollDice" onClick={rollDice}> Roll Dice</button>
+      <button className="rollDice" onClick={rollDice}> {tenzies ? "New Game" : "Roll dice" }</button>
 
     </div>
   )
