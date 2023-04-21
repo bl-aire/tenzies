@@ -3,6 +3,7 @@ import './App.css'
 import Die from './components/Die'
 import React from 'react';
 import {nanoid} from "nanoid"
+import Confetti from "react-confetti"
 
 
 
@@ -65,6 +66,7 @@ function App() {
 
   return (
     <div className='main'>
+      {tenzies && <Confetti />}
       <Content />
 
       <div className='die_container'>
