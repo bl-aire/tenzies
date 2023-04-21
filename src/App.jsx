@@ -10,6 +10,11 @@ function App() {
 
   const [dice, setDice] = React.useState(allNewDice())
 
+  const [tenzies, setTenzies] = React.useState(false)
+
+  React.useEffect(() => {
+    console.log("Dice state changed")
+  }, [dice])
 
   function generateNewDie() {
     return {
@@ -17,7 +22,7 @@ function App() {
         isHeld: false,
         id: nanoid()
     }
-}
+  }
 
   function allNewDice(){
     const newDice = []
@@ -41,16 +46,16 @@ function App() {
             {...die, isHeld: !die.isHeld} :
             die
     }))
-}
+  }
 
-const diceElements = dice.map(die => (
-  <Die 
+  const diceElements = dice.map(die => (
+    <Die 
       key={die.id} 
       value={die.value} 
       isHeld={die.isHeld} 
       holdDice={() => holdDice(die.id)}
-  />
-))
+    />
+  ))
 
   return (
     <div className='main'>
